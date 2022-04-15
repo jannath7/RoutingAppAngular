@@ -1,0 +1,28 @@
+<div id="container"><h1>Send your reply</h1>
+    <div style="overflow: hidden;">
+        <div class="formbox">
+            <h5>From</h5>
+            <input type="text" [(ngModel)]="from">*
+        </div>
+        <div class="formbox">
+            <h5>To</h5>
+            <input type="text" [(ngModel)]="email">*
+        </div>
+        
+        <div class="formbox">
+            <h5>Subject</h5>
+            <input type="email" [(ngModel)]="subject">*
+        </div>
+        <div class="formbox">
+            <h5>Message</h5>
+            <textarea [(ngModel)]="message"></textarea>*
+        </div>
+    </div>
+
+    <div style="margin:30px;">
+        <button mat-raised-button color="primary" (click)="submit()" >Reply</button>
+    </div>
+    </div>
+    
+    
+    
